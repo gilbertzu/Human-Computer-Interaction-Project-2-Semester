@@ -5,4 +5,4 @@ Website consisted of Home page, Coffee menu page, Tea menu page, Food menu page,
 
 Logo is originally made and all of the assets images are due to the respectful owner of the image and within the copyright rule to be used for personal project.
 
-The project is focusing in implementation of styling using external CSS and external JS without JQuery.
+The project is focusing in implementation of styling using external CSS and scripting using external JS without JQuery.
