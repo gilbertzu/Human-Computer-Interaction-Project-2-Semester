@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Caffein Line</title>
+    <link rel="stylesheet" href="style/payment.css">
+    <link rel="icon" href="assets/icon.png">
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <script src="scripts/payment.js"></script>
+</head>
+<body>
+    <div class="header">
+     <a href="1. home.html"><img src="assets/logo.png" alt="" class="logo"></a>
+    
+    <nav>
+        <ul>
+            <li><a href="1. home.html">Home</a></li>
+            <li class="drink">
+                <a href="">Menu Beverages</a>
+                <ul>
+                    <a href="2. coffee.html"><img src="assets/coffee.jpg" alt=""></a>
+                    <a href="2. coffee.html"><li>Coffee</li></a>
+                    <a href="3. tea.html"><img src="assets/tea.jpeg" alt=""></a>
+                    <a href="3. tea.html"><li>Tea</li></a>
+                </ul>
+            </li>
+            <li><a href="4. food.html">Menu Desserts</a></li>
+            <li><a href="5. contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="6. payment.html" target="_blank">Payment</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="content">
+        <div class = "process">
+        <form name="payment"id="payment">
+            <h1>Payment</h1>
+            <ul>
+                <li><label for="name">Name</label>:<input type="text" name="nama" id="name" placeholder="Input Your Name" class="text"></li>
+                <li><label for="email">Email</label>:<input type="text" name="email" id="email" placeholder="Input Your Email" class="text"></li>
+                <li><label for="City">City :</label> </li>
+                <li>
+                <select name="city" id="city" class="text">
+                    <option value="empty">Choose One</option>
+                    <option value="">Aceh</option>
+                    <option value="">Bali</option>
+                    <option value="">Banten</option>
+                    <option value="">Bengkulu</option>
+                    <option value="">D.I. Yogyakarta</option>
+                    
+                    <option value="">D.K.I. Jakarta</option>
+                    <option value="">Gorontalo</option>
+                    <option value="">Jambi</option>
+                    <option value="">Jawa Barat</option>
+                    <option value="">Jawa Tengah</option>
+                    
+                    <option value="">Jawa Timur</option>
+                    <option value="">Kalimantan Barat</option>
+                    <option value="">Kalimantan Selatan</option>
+                    <option value="">Kalimantan Tengah</option>
+                    <option value="">Kalimantan Timur</option>
+                    
+                    <option value="">Kalimantan Utara</option>
+                    <option value="">Kepulauan Bangka Belitung</option>
+                    <option value="">Kepulauan Riau</option>
+                    <option value="">Lampung</option>
+                    <option value="">Maluku</option>
+                    
+                    <option value="">Maluku Utara</option>
+                    <option value="">Nusa Tenggara Barat</option>
+                    <option value="">Nusa Tenggara Timur</option>
+                    <option value="">Papua</option>
+                    <option value="">Papua Barat</option>
+                    
+                    <option value="">Riau</option>
+                    <option value="">Sulawesi Barat</option>
+                    <option value="">Sulawesi Selatan</option>
+                    <option value="">Sulawesi Tengah</option>
+                    <option value="">Sulawesi Tenggara</option>
+
+                    <option value="">Sulawesi Utara</option>
+                    <option value="">Sumatra Barat</option>
+                    <option value="">Sumatra Selatan</option>
+                    <option value="">Sumatra Utara</option>
+                </select>
+                </li>
+                
+                <li><label for="address">Address :</label></li>
+                <li><textarea name="address" id="address" form="payment" placeholder="Please enter your address here"></textarea></li>
+                <li><label for="pp">Payment Method :</label></li>
+                <li>
+                    <input type="radio" name="method" id="pp" value="pp" class="radio"><label for="pp">Paypal</label>
+                    <input type="radio" name="method" id="cc" value="cc" class="radio"><label for="cc">Visa</label>
+                </li>
+                <li><input type="checkbox" name="terms" id="terms" class="radio"><label for="terms">Agree with Conditions and Terms</label> </li>
+                <li><h3 id ="er">Error</h3></li>
+                <li>
+                    <input type="button" value="Confirm" class="submit" onclick="validation()">
+                    <input type="reset" value="Cancel" class="submit">
+                </li>
+            </div>
+                <div id = "auth">
+                <li><label for="card">Card Number</label>:<input type="text" name="card" id="card" placeholder="Input Your Card Number" class="text"></li>
+                <li><label for="valid">Validity</label>:<input type="text" name="valid" id="valid" placeholder="MM/YY" class="text"></li>
+                <li><label for="cvv">CVV</label>:<input type="text" name="cvv" id="cvv" placeholder="CVV" class="text"></li>
+                <li>
+                    <input type="button" value="Authenticate" class="auth" onclick="authentication()">
+                    <input type="reset" value="Cancel" class="auth">
+                </li>
+                </div>
+            </ul>
+            </form>
+
+    </div>
+    <div class="footer">
+        <div class="ongkir">
+            <h3>Free Delivery Fee for Every Transaction Without Minimum Amount of Purchase</h3>
+            </div>
+        <ul>
+            <li><img src="assets/ig.png" alt=""> </li>
+            <li><img src="assets/twit.png" alt=""></li>
+        </ul>
+        <h1>Copyright CaffeinLine 2021</h1>
+
+    </div>
+</body>
+</html>
